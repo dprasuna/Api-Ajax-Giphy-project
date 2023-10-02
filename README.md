@@ -5,7 +5,7 @@ GitHub Project Description:
 🚀 Welcome to the API AJAX GIPHY PROJECT! 🎉
 
 Are you ready to unleash the power of GIPHY and create awesome GIFs tailored to your interests and topics? Look no further! Our project empowers users to effortlessly generate GIFs using the GIPHY API and AJAX technology.
-
+ 
 🌟 Key Features:
 
 1️⃣ Customized GIFs: Enter your favorite topics, interests, or keywords to generate GIFs that match your preferences.
