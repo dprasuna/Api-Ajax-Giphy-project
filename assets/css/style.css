@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #777;
+    background-image: url("../images/grey_wash_wall.png");
+}
+
+
+/* Header */
+
+.myname {
+    margin: auto;
+    font-size: 2.00rem;
+}
+#whttxt {
+    color: white;
+}
+.mycontainer {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+#myheader {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: darkgray;
+  border-bottom: 2px solid #ccc;
+}
+
+.mynavbar {
+    background-color: rgb(62, 62, 92);
+    padding: 12px 46px;
+}
+.navbar-rm {
+    margin-right: 25px;
+}
+
+ul li {
+    font-size: 14px;
+    line-height: 6px;
+    color: #999;
+    border-left: 1px solid #efefef;
+}
+
+ul li a {
+    color: #cccccc;
+    font-weight: bolder;
+}
+
+ul li:first-child {
+    border-left: none;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(62, 62, 92);
+}
+
+/* Footer */
+
+.my-footer {
+    text-align: center;
+    clear: both;
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    line-height: 60px;
+    background-color: darkgray;
+    border-top: 8px solid rgb(62, 62, 92);
+}
+
+/* Main */
+
+section {
+    padding-top: 138px;
+    padding-bottom: 25px;
+    min-height: calc(100vh - 70px);
+    justify-content: space-evenly;
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+    clear: both;
+}
+.myp{
+    color: rgb(192, 117, 117);
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.mybtngrp {
+    display: inline-block;
+}
+.gif-card{
+    position: relative;
+    display: initial;
+    float: left;
+    width:280px; 
+    height:315px;
+    padding-bottom: 15px;
+    border: 3px solid blue;
+}
+.mycardbody{
+    padding: 10px;
+    line-height: 1.90;
+    font-size: .75rem;
+    height: 85px;
+    font-weight: 400;
+}
+
+.my-img {
+    width:100%;
+    height:230px;
+}
+
+/* Gif buttons */
+.favorite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+.checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    background: lightgray;
+}
+
+/* Media */
+
+@media screen and (max-width: 1168px) {
+    
+    #fav-container{
+        padding-right: 20px;
+        margin-right: 40px;
+    }
+    .gif-card{
+        width:160px;
+        height:190px;
+
+    }
+    .my-img{
+        width:100%;
+        height:140px;
+    }
+    .mycardbody{
+        padding: 6px;
+        line-height: 1.40;
+        font-size: .56rem;
+        height: 50px;
+        font-weight: 400;
+    }
+    .favorite {
+        padding: 0px;
+        border: 0px;
+        line-height: 0;
+        width: 28px;
+        height: 28px;
+    }
+    .checkbox {
+        padding: 0;
+        line-height: 0;
+        width: 28px;
+        height: 28px;
+    }
+    #searchBtn, #clearBtn{
+        font-size: 14px;
+        padding: .20rem .25rem;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    
+    #fav-container{
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+    .gif-card{
+        width:120px;
+        height:145px;
+
+    }
+    .my-img{
+        width:100%;
+        height:100px;
+    }
+    .mycardbody{
+        padding: 5px;
+        line-height: 1.33;
+        font-size: .50rem;
+        height: 40px;
+        font-weight: 300;
+    }
+    .favorite {
+        width: 19px;
+        height: 19px;
+        padding: 0px;
+        border: 0px;
+        line-height: 0;
+    }
+    .checkbox {
+        padding: 0;
+        border: 0;
+        font-size: 12px;
+        line-height: 0;
+        width: 19px;
+        height: 19px;
+    }
+    #searchBtn, #clearBtn{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    #fav-container{
+        padding-right: 0;
+        margin-right: 10px;
+    }
+    .gif-card{
+        width:75px;
+        height:85px;
+
+    }
+    .my-img{
+        width:100%;
+        height:60px;
+    }
+    .mycardbody{
+        padding: 3px;
+        line-height: 1.25;
+        font-size: .30rem;
+        height: 25px;
+        font-weight: 200;
+    }
+    .favorite {
+        width: 14px;
+        height: 14px;
+        padding: 0px;
+        border: 0px;
+        line-height: 0;
+    }
+    .checkbox {
+        padding: 0;
+        border: 0;
+        line-height: 0;
+        width: 14px;
+        height: 14px;
+    }
+    #searchBtn, #clearBtn{
+        font-size: 12px;
+    }
+}
